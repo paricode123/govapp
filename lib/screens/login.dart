@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: SizedBox(
                       child: Center(
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(35.0),
+                          borderRadius: BorderRadius.circular(35.r),
                           child: Card(
                             color: Colors.white,
                             child: LoginForm(
@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: SizedBox(
                       child: Center(
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(35.0),
+                          borderRadius: BorderRadius.circular(35.r),
                           child: Card(
                             color: Colors.white,
                             child: LoginForm(
@@ -153,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: SizedBox(
                       child: Center(
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(35.0),
+                          borderRadius: BorderRadius.circular(35.r),
                           child: Card(
                             color: Colors.white,
                             child: LoginForm(

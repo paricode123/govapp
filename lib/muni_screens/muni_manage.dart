@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:untitled23/muni_screens/munidaily_reports.dart';
 
 class MuniManage extends StatefulWidget {
   const MuniManage({Key? key}) : super(key: key);
@@ -60,7 +61,14 @@ class _MuniManageState extends State<MuniManage> {
                     top: 70.h,
                     child: Column(
                       children: [
-                        _buildContainer('Daily Report', 'assets/images/dailyreport.png'),
+                        GestureDetector(onTap: ()
+                      {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MuniDaily()),
+                      );
+                      },
+                            child: _buildContainer('Daily Report', 'assets/images/dailyreport.png')),
                         _buildContainer('Monthly Report Status', 'assets/images/status.png'),
                         _buildContainer('Monthly Report', 'assets/images/monthreport.png'),
                         _buildContainer('Rise UC', 'assets/images/riceuc.png'),
